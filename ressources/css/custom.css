@@ -1,0 +1,26 @@
+.background-cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/ressources/images/bg.png);
+}
+.slide {
+    height: 99vh;
+    width: 100vw;
+}
+
+.presentation-title{
+    left: 2%;
+    color: #fff;
+    background-color: rgb(0,63,111);
+    font-size: 3em;
+    max-width: 50%;
+    font-weight: bolder;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.red-big-letter{
+    color: #f00;
+}
+
