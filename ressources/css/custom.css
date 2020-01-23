@@ -1,3 +1,6 @@
+html{
+    overflow: hidden;
+}
 .background-cover {
     background-position: center center;
     background-repeat: no-repeat;
@@ -5,7 +8,7 @@
     background-image: url(/ressources/images/bg.png);
 }
 .slide {
-    height: 99vh;
+    height: 100%;
     width: 100vw;
 }
 
@@ -18,6 +21,8 @@
     font-weight: bolder;
     padding-top: 1%;
     padding-bottom: 1%;
+    padding-left: 1%;
+    margin-left: 1%;
 }
 
 .red-big-letter{
