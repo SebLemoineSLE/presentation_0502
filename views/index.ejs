@@ -5,35 +5,78 @@
         <link rel="stylesheet" type="text/css" href="ressources/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="ressources/slick/slick-theme.css"/>
         <link rel="stylesheet" type="text/css" href="ressources/css/custom.css"/>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section class="background-cover slider">
-            <div class="slide">
-                <p class="presentation-title">
-                    <span class="red-big-letter">A</span>nalyse
-                    <span class="red-big-letter">D</span>es
-                    <span class="red-big-letter">B</span>esoins en formation <span class="red-big-letter">Langues</span></p>
-                <img id="logo-promeo" src="ressources/images/logoPROMEO.svg" width="200" alt="logo PROMEO"/>
-                <img id="logo-sio" src="ressources/images/logo2BTS.png" width="200" alt="logo PROMEO"/>
-                <img id="logo-adb" width="200" src="/ressources/images/adb.PNG" alt="logo adb langues"/>
+        <div class="slideshow">
+            <section class="background-cover slider">
+                <div class="item">
+                    <div class="presentation-title shadow">
+                        <p>
+                            <span class="red-big-letter">A</span>nalyse
+                            <span class="red-big-letter">D</span>es
+                            <span class="red-big-letter">B</span>esoins en formation <span class="red-big-letter">Langues</span></p>
+                    </div>
 
-                <p class="presentation-subtitle">
-                    Présentation de la plateforme  Mercredi 5 Février 2020</p>
+                    <img class="shadow-lg" id="logo-promeo" src="ressources/images/logoPROMEO.svg" width="200" alt="logo PROMEO"/>
+                    <img class="shadow-lg" id="logo-sio" src="ressources/images/logo2BTS.png" width="200" alt="logo PROMEO"/>
+                    <img class="shadow-lg" id="logo-adb" width="200" src="/ressources/images/adb.PNG" alt="logo adb langues"/>
 
-            </div>
-            <div class="slide">your content</div>
-            <div class="slide">your content</div>
-        </section>
+                    <div class="shadow-lg presentation-subtitle">
+                        <p>Présentation de la plateforme  Mercredi 5 Février 2020</p></div>
+
+                </div>
+                <div class="item">
+                    <div class="summury-title"><h1>Sommaire</h1></div>
+                    <div class="summury-content">
+                        <ul>
+                            <li>Historique du projet</li>
+                            <li>Fonctionnalités</li>
+                            <li>Fonctionnalités</li>
+                            <li>Outils & mise en recette</li>
+                            <li>Infrastructure & accès</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item"><h1 class="shadow-lg header1">Historique du projet - Le context</h1></div>
+                <div class="item"><h1 class="shadow-lg header1">Historique du projet - Plannification en phase</h1></div>
+                <div class="item"><h1 class="shadow-lg header1">Historique du projet - Budgetisation</h1></div>
+                <div class="item"><h1 class="shadow-lg header1">Fonctionnalités - Modèle Front & Back</h1></div>
+                <div class="item"><h1 class="shadow-lg header1">Fonctionnalités - Compatibilité des platformes</h1></div>
+                <div class="item"><h1 class="shadow-lg header1">Fonctionnalités - Front Office</h1></div>
+                <div class="item"><h1 class="shadow-lg header1">Fonctionnalités - Back Office</h1></div>
+                <div class="item"><h1 class="shadow-lg header1">Fonctionnalités - R.A.F.</h1></div>
+                <div class="item"><h1 class="shadow-lg header1">Outils de mise en Recette - TestCollab</h1></div>
+                <div class="item"><h1 class="shadow-lg header1">Outils de mise en Recette - MantisBT</h1></div>
+                <div class="item"><h1 class="shadow-lg header1">Mise en Recette - Session de tests</h1></div>
+                <div class="item"><h1 class="shadow-lg header1">Infrastructure de recette - Déploiement actuel</h1></div>
+                <div class="item"><h1 class="shadow-lg header1">Infrastructure de recette - Accès futur à ADB Langue</h1></div>
+            </section>
+        </div>
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="ressources/slick/slick.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
         <script type="text/javascript">
             $(document).ready(function(){
                 $('.slider').slick({
-                    fade: true
-                });
+                    draggable: true,
+                    arrows: false,
+                    dots: true,
+                    fade: true,
+                    speed: 900,
+                    infinite: true,
+                    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+                    touchThreshold: 100,
+                    centerPadding: "0px"
+                })
             });
         </script>
     </body>

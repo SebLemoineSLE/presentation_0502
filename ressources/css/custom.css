@@ -1,23 +1,52 @@
-html{
+:root{
+    --dark-blue-promeo : rgb(0,86,119);
+    --light-blue-promeo : rgb(13,163,221);
+    --red-promeo: rgb(226,5,27);
+}
+
+body,
+html {
+    height: 100%;
+    margin:0;
     overflow: hidden;
 }
+
+
+
+
+
+
 .background-cover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/ressources/images/bg.png);
+    background-image: url('/ressources/images/bg.png');
 }
-.slide {
+.item {
     height: 100%;
-    width: 100vw;
+    width: 100%;
 }
 
+.header1{
+    left: 2%;
+    color: #fff;
+    background-color: var(--dark-blue-promeo);
+    font-size: 3em;
+    max-width: 75%;
+    font-weight: bolder;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    margin-left: 1%;
+    font-family: 'Work Sans', sans-serif;
+}
 
 /* slide 1*/
 .presentation-title{
-    left: 2%;
+    position: absolute;
+    top: 2%;
     color: #fff;
-    background-color: rgb(0,63,111);
+    background-color: var(--dark-blue-promeo);
     font-size: 4em;
     max-width: 50%;
     font-weight: bolder;
@@ -33,7 +62,7 @@ html{
     right: 2%;
     bottom: 2%;
     color: #fff;
-    background-color: rgb(0,63,111);
+    background-color: var(--dark-blue-promeo);
     font-size: 3em;
     max-width: 50%;
     font-weight: bolder;
@@ -43,24 +72,68 @@ html{
 }
 
 .red-big-letter{
-    color: #f00;
+    color: var(--red-promeo);
 }
 
 #logo-promeo{
+    position: absolute;
+    left: 15%;
+    bottom: 3%;
+}
+
+#logo-adb{
     position: absolute;
     left: 2%;
     bottom: 3%;
 }
 #logo-sio{
     position: absolute;
-    left: 15%;
-    bottom: 3%;
+    left: 2%;
+    bottom: 30%;
 }
-#logo-adb{
+
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.shadow-lg{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.summury-title{
     position: absolute;
-    left: 28%;
-    bottom: 3%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background: #fff;
 }
+
+.summury-title h1{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 4em;
+    font-size: 3em;
+    color: var(--light-blue-promeo);
+}
+
+.summury-content ul{
+    vertical-align: middle;
+    color: #fff;
+    font-size: 3em;
+    list-style: none;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.summury-content{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background: var(--light-blue-promeo);
+}
+
 
 
 
