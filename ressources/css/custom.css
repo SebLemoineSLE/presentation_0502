@@ -11,16 +11,11 @@ html {
     overflow: hidden;
 }
 
-
-
-
-
-
 .background-cover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/ressources/images/bg.png');
+    background-image: url('/ressources/images/bg2.png');
 }
 .item {
     height: 100%;
@@ -39,6 +34,7 @@ html {
     padding-left: 1%;
     margin-left: 1%;
     font-family: 'Work Sans', sans-serif;
+    opacity: 0.85;
 }
 
 /* slide 1*/
@@ -55,6 +51,7 @@ html {
     padding-left: 1%;
     margin-left: 1%;
     font-family: 'Work Sans', sans-serif;
+    opacity: 0.85;
 }
 
 .presentation-subtitle{
@@ -69,6 +66,7 @@ html {
     padding: 1%;
     margin-left: 1%;
     font-family: 'Work Sans', sans-serif;
+    opacity: 0.85;
 }
 
 .red-big-letter{
@@ -106,6 +104,7 @@ html {
     width: 100%;
     height: 20%;
     background: #fff;
+    opacity: 0.85;
 }
 
 .summury-content h1{
@@ -131,6 +130,7 @@ html {
     width: 100%;
     height: 80%;
     background: var(--light-blue-promeo);
+    opacity: 0.85;
 }
 
 .ender_pres{
