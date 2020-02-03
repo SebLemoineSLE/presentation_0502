@@ -9,99 +9,68 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
         <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="slideshow">
             <section class="background-cover slider">
                 <div class="item">
-                    <div class="presentation-title shadow">
-                        <p>
-                            <span class="red-big-letter">A</span>nalyse
-                            <span class="red-big-letter">D</span>es
-                            <span class="red-big-letter">B</span>esoins en formation <span class="red-big-letter">Langues</span></p>
-                    </div>
-
-                    <img class="shadow-lg" id="logo-promeo" src="ressources/images/logoPROMEO.svg" width="200" alt="logo PROMEO"/>
-                    <img class="shadow-lg" id="logo-sio" src="ressources/images/logo2BTS.png" width="200" alt="logo PROMEO"/>
-                    <img class="shadow-lg" id="logo-adb" width="200" src="/ressources/images/adb.PNG" alt="logo adb langues"/>
-
-                    <div class="shadow-lg presentation-subtitle">
-                        <p>Présentation de la plateforme  Mercredi 5 Février 2020</p></div>
-
+                    <%- include('./slides/0-intro.ejs'); %>
                 </div>
                 <div class="item">
-                    <div class="summury-title"></div>
-                    <div class="summury-content">
-                        <h1>Ordre du jour</h1>
-                        <ul>
-                            <li><span class="red-big-letter">Historique du projet</span></li>
-                            <li>Fonctionnalités</li>
-                            <li>Outils & mise en recette</li>
-                            <li>Infrastructure & accès</li>
-                        </ul>
-                    </div>
+                    <%- include('./slides/01-sommaire1.ejs'); %>
                 </div>
-                <div class="item"><h1 class="shadow-lg header1">Historique du projet - Le context</h1></div>
-                <div class="item"><h1 class="shadow-lg header1">Historique du projet - Plannification en phase</h1></div>
-                <div class="item"><h1 class="shadow-lg header1">Historique du projet - Budgetisation</h1></div>
                 <div class="item">
-                    <div class="summury-title"></div>
-                    <div class="summury-content">
-                        <h1>Ordre du jour</h1>
-                        <ul>
-                            <li>Historique du projet</li>
-                            <li><span class="red-big-letter">Fonctionnalités</span> </li>
-                            <li>Outils & mise en recette</li>
-                            <li>Infrastructure & accès</li>
-                        </ul>
-                    </div>
+                    <%- include('./slides/02-Histo-context.ejs'); %>
                 </div>
-                <div class="item"><h1 class="shadow-lg header1">Fonctionnalités - Modèle Front & Back</h1></div>
-                <div class="item"><h1 class="shadow-lg header1">Fonctionnalités - Compatibilité des platformes</h1></div>
-                <div class="item"><h1 class="shadow-lg header1">Fonctionnalités - Front Office</h1></div>
-                <div class="item"><h1 class="shadow-lg header1">Fonctionnalités - Back Office</h1></div>
-                <div class="item"><h1 class="shadow-lg header1">Fonctionnalités - R.A.F.</h1></div>
                 <div class="item">
-                    <div class="summury-title"></div>
-                    <div class="summury-content">
-                        <h1>Ordre du jour</h1>
-                        <ul>
-                            <li>Historique du projet</li>
-                            <li>Fonctionnalités </li>
-                            <li><span class="red-big-letter">Outils & mise en recette</span></li>
-                            <li>Infrastructure & accès</li>
-                        </ul>
-                    </div>
+                    <%- include('./slides/03-Histo-plan.ejs'); %>
                 </div>
-                <div class="item"><h1 class="shadow-lg header1">Outils de mise en Recette - TestCollab</h1></div>
-                <div class="item"><h1 class="shadow-lg header1">Outils de mise en Recette - MantisBT</h1></div>
-                <div class="item"><h1 class="shadow-lg header1">Mise en Recette - Session de tests</h1></div>
                 <div class="item">
-                    <div class="summury-title"></div>
-                    <div class="summury-content">
-                        <h1>Ordre du jour</h1>
-                        <ul>
-                            <li>Historique du projet</li>
-                            <li>Fonctionnalités </li>
-                            <li>Outils & mise en recette</li>
-                            <li><span class="red-big-letter"> Infrastructure & accès</span></li>
-                        </ul>
-                    </div>
+                    <%- include('./slides/04-Histo-budget.ejs'); %>
                 </div>
-                <div class="item"><h1 class="shadow-lg header1">Infrastructure de recette - Déploiement actuel</h1></div>
-                <div class="item"><h1 class="shadow-lg header1">Infrastructure de recette - Accès futur à ADB Langue</h1></div>
                 <div class="item">
-                    <div class="ender_pres">
-                        <img src="/ressources/images/header_end_pres.PNG" alt="logo promeo-formation.fr" id="header_end"/>
-                        <img src="/ressources/images/content_end_pres.PNG" alt="logo promeo UIMM HDF" id="content_end"/>
-                        <img  id="logo-sio-end" src="ressources/images/logo2BTS.png"  alt="logo PROMEO"/>
-                        <img  id="logo-adb-end" src="ressources/images/adb.PNG"  alt="logo adb langues"/>
-
-                        <img src="/ressources/images/footer_end_pres.PNG" alt="footer AFAQ sites promeo" id="footer_end"/>
-                    </div>
-
+                    <%- include('./slides/05-sommaire2.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/06-Fonc-FB.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/07-Fonc-plateforme.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/08-Fonc-front.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/09-Fonc-back.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/10-Fonc-raf.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/11-sommaire3.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/12-outils-testcollab.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/13-outils-mantis.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/14-outils-session.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/15-sommaire4.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/16-Infra-actuel.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/17-Infra-futur.ejs'); %>
+                </div>
+                <div class="item">
+                    <%- include('./slides/18-end.ejs'); %>
                 </div>
             </section>
         </div>

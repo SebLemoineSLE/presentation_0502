@@ -15,7 +15,7 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/ressources/images/bg2.png');
+    background-image: url('/ressources/images/bg3.png');
 }
 .item {
     height: 100%;
@@ -26,13 +26,14 @@ html {
     left: 2%;
     color: #fff;
     background-color: var(--dark-blue-promeo);
-    font-size: 3em;
+    font-size: 5%;
     max-width: 75%;
     font-weight: bolder;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
     margin-left: 1%;
+    margin-top: 1%;
     font-family: 'Work Sans', sans-serif;
     opacity: 0.85;
 }
@@ -178,3 +179,85 @@ html {
     width: 8vw;
 }
 
+.titre-contenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background: var(--dark-blue-promeo);
+    opacity: 0.90;
+    padding-bottom: 1%;
+}
+
+.titre-contenu h1{
+
+    font-size: 4.5em;
+    color: #ffffff;
+    font-weight: bolder;
+}
+.content-contenu{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    background: #ffffff;
+}
+
+/*
+    SLIDE HISTORIQUE CONTEXT
+ */
+.discussion{
+    position: absolute;
+    left: 5%;
+    width: 55vw;
+    margin-top: 3%;
+}
+
+.profile-pic{
+    margin-top: 1vh;
+    width: 5vw;
+    border-radius: 50%;
+}
+
+.bubble{
+    position: relative;
+    background: #d8d8d8;
+    font-size: 2.5vh;
+    margin: 1vh 1vw;
+    padding: 4%;
+    color: #000000;
+    border-radius: 3%;
+    width: 100%;
+}
+
+.bubble-sender{
+    background: var(--dark-blue-promeo) ;
+    color: #ffffff;
+}
+
+#word{
+    position: relative;
+    left: 40%;
+}
+
+.titre-doc{
+    font-size: 2em;
+}
+
+.center-col{
+    margin-top: 7%;
+}
+
+#mail{
+    position: absolute;
+    margin-top: -3%;
+    left: 40%;
+    width: 55%;
+    text-align: center;
+}
+
+#mail img{
+    max-width: 100%;
+}
