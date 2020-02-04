@@ -48,6 +48,8 @@ html {
     font-family: 'Work Sans', sans-serif;
     padding: 1%;
     border-radius: 5%;
+    font-size: 3em;
+    text-align: center;
 }
 
 /* slide 1*/
@@ -56,7 +58,7 @@ html {
     top: 2%;
     color: #fff;
     background-color: var(--dark-blue-promeo);
-    font-size: 4em;
+    font-size: 5em;
     max-width: 50%;
     font-weight: bolder;
     padding-top: 1%;
@@ -73,7 +75,7 @@ html {
     bottom: 2%;
     color: #fff;
     background-color: var(--dark-blue-promeo);
-    font-size: 3em;
+    font-size: 4em;
     max-width: 50%;
     font-weight: bolder;
     padding: 1%;
@@ -223,12 +225,12 @@ html {
 .discussion{
     position: absolute;
     left: 5%;
-    width: 55vw;
+    width: 50%;
     margin-top: 3%;
 }
 
 .profile-pic{
-    margin-top: 1vh;
+    margin-top: 1%;
     width: 5vw;
     border-radius: 50%;
 }
@@ -236,8 +238,8 @@ html {
 .bubble{
     position: relative;
     background: #d8d8d8;
-    font-size: 2.5vh;
-    margin: 1vh 1vw;
+    font-size: 2.5em;
+    margin: 1% 1%;
     padding: 4%;
     color: #000000;
     border-radius: 3%;
@@ -327,7 +329,7 @@ SLIDE 2
 }
 
 #team-pic{
-    width: 20vw;
+    width: 20%;
     margin-left: 50%;
 }
 
@@ -358,18 +360,59 @@ SLIDE 6 FRON BAKC
 }
 #acces-back{
     top: 20vh;
-    right: 2vw;
+    right: 2%;
 }
 
 #acces-front{
     top: 20vh;
-    left: 2vw;
+    left: 2%;
 }
 
 #access-title-back{
-
+    position: absolute;
+    right: 2%;
 }
 
 #access-title-front{
 
+}
+
+td{
+    font-size: 1.1em;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: bolder;
+
+}
+
+#adaptive{
+    text-align: center;
+}
+
+#adaptive img{
+     margin-left: 25vw;
+     width: 50vw;
+ }
+
+.centre img{
+    width: 34vw;
+    margin-left: 33vw;
+}
+
+.centre{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#btn-custom, #btn-custom-back{
+    background-color: var(--light-blue-promeo);
+    color: #fff;
+    font-size: xx-large;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+
+#btn-custom:hover, #btn-custom-back:hover{
+    background-color: var(--red-promeo);
 }
