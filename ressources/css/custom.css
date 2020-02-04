@@ -404,7 +404,7 @@ td{
     margin-top: 5%;
 }
 
-#btn-custom, #btn-custom-back{
+#btn-custom, #btn-custom-back, #btn-custom-testcollab, #btn-custom-mantis{
     background-color: var(--light-blue-promeo);
     color: #fff;
     font-size: xx-large;
@@ -413,6 +413,6 @@ td{
 }
 
 
-#btn-custom:hover, #btn-custom-back:hover{
+#btn-custom:hover, #btn-custom-back:hover, #btn-custom-testcollab:hover, #btn-custom-mantis:hover{
     background-color: var(--red-promeo);
 }
